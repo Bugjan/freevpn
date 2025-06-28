@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>公益 VPN 公告站</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-100 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-8 text-center">
+    <!-- 公告區 -->
+    <h1 class="text-3xl font-extrabold text-indigo-600 mb-4">📢 公告訊息</h1>
+    <p class="text-lg text-gray-700 mb-6">我們致力於提供安全、穩定又免費的 VPN 服務，幫助需要的人突破限制，自由上網。</p>
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded mb-6" role="alert">
+      <p class="font-bold">重要通知：</p>
+      <p>本站將於 <strong>2025 年 7 月 5 日（週六）晚間 11:00</strong> 至 <strong>7 月 6 日（週日）上午 4:00</strong> 進行系統維護，期間將暫停所有服務，請提前安排使用時間。</p>
+    </div>
+
+    <!-- 我們推薦的 VPN 客戶端 -->
+    <div class="bg-indigo-50 border-l-4 border-indigo-400 text-indigo-800 p-4 rounded mb-6 text-left" role="alert">
+      <h2 class="text-xl font-bold mb-2">🚀 我們推薦的 VPN 客戶端</h2>
+      <p class="mb-2">以下是我們推薦使用的 VPN 應用程式，請根據裝置類型與架構選擇合適的版本：</p>
+
+      <h3 class="font-semibold text-indigo-600 mt-4">Android 裝置</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 mb-2">
+        <li><strong>Hiddify</strong>（支援多協議，介面簡單）：<br/>
+          <a href="https://github.com/hiddify/hiddify-app/releases" target="_blank" class="underline text-blue-600">GitHub Releases</a>
+        </li>
+        <li><strong>FlClash</strong>（Clash 前端，推薦進階用戶）：<br/>
+          <a href="https://github.com/chen08209/FlClash/releases/" target="_blank" class="underline text-blue-600">GitHub Releases</a>
+        </li>
+      </ul>
+      <p class="text-sm italic text-gray-600 mb-2">Android 安裝包類型說明：</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-4">
+        <li><strong>armv7</strong>：支援大部分舊機型（32 位元）</li>
+        <li><strong>armv8</strong>：支援較新裝置（64 位元）</li>
+        <li><strong>x86_64</strong>：部分模擬器或平板（如 Chromebook）</li>
+        <li><strong>universal</strong>：通用版本，建議不確定時選此</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-4">Apple 裝置</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800">
+        <li><strong>Shadowrocket（小火箭）</strong>：請自行搜尋「蘋果公益小火箭帳號」，本站不提供安裝檔。</li>
+      </ul>
+    </div>
+
+    <!-- 公益 VPN 訂閱列表 -->
+    <div class="bg-green-50 border-l-4 border-green-400 text-green-800 p-4 rounded mb-6 text-left" role="alert">
+      <h2 class="text-xl font-bold mb-2">🧩 我們的公益 VPN 訂閱列表</h2>
+      <p class="mb-2">以下是我們提供的公益節點訂閱連結，請依據你的客戶端選擇適用的版本：</p>
+
+      <p class="font-semibold text-green-600">📦 適用於 Clash Meta / FlClash：</p>
+      <ul class="list-disc list-inside text-sm text-gray-800 mb-2">
+        <li><a href="https://bpb3.pykgpp.dpdns.org/sub/6a8796bf-ec16-4d87-b889-db82ce188d64?app=clash#BPB-Full-Normal" target="_blank" class="underline text-blue-600">bpb3.pykgpp.dpdns.org/...#BPB-Full-Normal</a></li>
+        <li><a href="https://bpb.pykgpp.dpdns.org/sub/9765431a-9616-4773-9251-13d622a1f7e3?app=clash#BPB-Full-Normal" target="_blank" class="underline text-blue-600">bpb.pykgpp.dpdns.org/...#BPB-Full-Normal</a></li>
+      </ul>
+
+      <p class="font-semibold text-green-600">🛰️ 適用於所有支援 VLESS 協議的客戶端：</p>
+      <ul class="list-disc list-inside text-sm text-gray-800">
+        <li><a href="https://vless.pykgpp.dpdns.org/48869bb7-60ba-46a6-b0ab-60474ed6e6e5?sub" target="_blank" class="underline text-blue-600">vless.pykgpp.dpdns.org/...?sub</a></li>
+      </ul>
+
+      <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 mt-4 rounded text-sm">
+        ⚠️ <strong>注意：</strong>本站僅提供 VPN 節點的搭建與公益分享服務，<strong>不保證連線穩定性、速度或串流平台解鎖能力</strong>，請理性使用。
+      </div>
+    </div>
+
+    <!-- FlClash 使用教學 -->
+    <div class="bg-white border border-indigo-300 rounded-xl p-4 text-left mb-6">
+      <h3 class="text-lg font-bold text-indigo-700 mb-2">📱 FlClash 使用教學（Android）</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
+        <li>從 GitHub Releases 頁面下載適合你手機架構的 APK 並安裝。</li>
+        <li>打開 FlClash，點右上角「⋮」→「配置管理」→「新增」，匯入你的 Clash 設定檔（檔案、URL 或 QR code）。</li>
+        <li>設定好後回到主畫面，點擊「啟動代理」，允許 VPN 權限。</li>
+        <li>確認按鈕狀態為「運行中」，即可正常使用。</li>
+        <li>如需調整代理模式（全局、規則、自定義），可於主頁右下方切換。</li>
+      </ol>
+    </div>
+
+    <!-- 聯絡方式 -->
+    <div class="text-sm text-gray-500 mt-4">
+      若有問題請聯絡：<a href="mailto:Bugjang3@gmail.com" class="underline text-indigo-800">Bugjang3@gmail.com</a><br/>
+      &copy; 2025 公益 VPN 分享站
+    </div>
+  </div>
+</body>
+</html>
