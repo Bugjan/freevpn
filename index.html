@@ -17,7 +17,7 @@
       <h2 class="text-xl font-bold mb-2">🚀 我們推薦的 VPN 客戶端</h2>
       <p class="mb-2">以下是我們推薦使用的 VPN 應用程式，請根據裝置類型與架構選擇合適的版本：</p>
 
-      <h3 class="font-semibold text-indigo-600 mt-4">Android 裝置</h3>
+      <h3 class="font-semibold text-indigo-600 mt-4">Android/Windows/Linux/MacOS 裝置</h3>
       <ul class="list-disc list-inside text-sm text-gray-800 mb-2">
         <li><strong>Hiddify</strong>（支援多協議，介面簡單）：<br/>
           <a href="https://github.com/hiddify/hiddify-app/releases" target="_blank" class="underline text-blue-600">GitHub Releases</a>
@@ -28,19 +28,92 @@
           <a href="https://flclash-download.pages.dev/" target="_blank" class="underline text-blue-600">GitHub 加速下載</a>
         </li>
       </ul>
-      <p class="text-sm italic text-gray-600 mb-2">Android 安裝包類型說明：</p>
-      <ul class="list-disc list-inside text-sm text-gray-700 mb-4">
-        <li><strong>armv7</strong>：支援大部分舊機型（32 位元）</li>
-        <li><strong>armv8</strong>：支援較新裝置（64 位元）</li>
-        <li><strong>x86_64</strong>：部分模擬器或平板（如 Chromebook）</li>
-        <li><strong>universal</strong>：通用版本，建議不確定時選此</li>
-      </ul>
+	  
+<h3>支持的安裝包架構及適用設備</h3>
+<p>請根據您的設備選擇適合的安裝包架構進行下載：</p>
 
-      <h3 class="font-semibold text-indigo-600 mt-4">Apple 裝置</h3>
+<ul>
+    <li><strong>Android</strong>：
+        <ul>
+            <li><strong>ARM64 架構：</strong>適用於大部分現代 Android 設備（如許多高端智能手機）</li>
+            <li><strong>ARMv7 架構：</strong>適用於較舊的 Android 設備</li>
+            <li><strong>Universal 通用版（支持多架構）：</strong>適用於多種不同架構的 Android 設備（例如，舊款與新款設備）</li>
+            <li><strong>x86_64 架構：</strong>適用於某些特定的 Android 平台（如基於 x86 的平板或手機）</li>
+        </ul>
+    </li>
+
+    <li><strong>Linux</strong>：
+        <ul>
+            <li><strong>Debian x64 架構：</strong>適用於運行 Debian 或基於 Debian 的 Linux 發行版（如 Ubuntu）的 x64 架構設備</li>
+            <li><strong>通用 x64 架構（AppImage 格式）：</strong>適用於大多數現代 Linux 發行版（如 Ubuntu、Fedora、CentOS）</li>
+            <li><strong>RPM x64 架構：</strong>適用於 CentOS、Fedora、RHEL 等 RPM 類型的 Linux 發行版</li>
+        </ul>
+    </li>
+
+    <li><strong>macOS</strong>：
+        <ul>
+            <li><strong>Intel 架構安裝包（pkg 格式）：</strong>適用於配備 Intel 處理器的 Mac 電腦</li>
+            <li><strong>Intel 或 Apple Silicon 架構磁碟映像（dmg 格式）：</strong>適用於所有現代 Mac 電腦（包括 Apple Silicon M1/M2 系列處理器的 Mac）</li>
+        </ul>
+    </li>
+
+    <li><strong>iOS</strong>：
+        <ul>
+            <li><strong>iOS 安裝包（.ipa 格式）：</strong>適用於 iPhone、iPad 及 iPod Touch 等蘋果移動設備</li>
+        </ul>
+    </li>
+
+    <li><strong>Windows</strong>：
+        <ul>
+            <li><strong>便攜版 x64 架構（zip 格式）：</strong>適用於所有支持 x64 架構的 Windows 設備，可直接運行無需安裝</li>
+            <li><strong>安裝程式 x64 架構（exe 格式）：</strong>適用於 x64 架構的 Windows 設備（如 Windows 7/8/10/11）</li>
+            <li><strong>MSIX 安裝包 x64 架構：</strong>適用於 Windows 10 或更新版本的設備，支持 MSIX 安裝格式</li>
+        </ul>
+    </li>
+</ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-4">iOS/iPadOS 裝置</h3>
       <ul class="list-disc list-inside text-sm text-gray-800">
-        <li><strong>Shadowrocket（小火箭）</strong>：請自行搜尋「蘋果公益小火箭帳號」，本站不提供安裝檔。</li>
+        <li><strong>Shadowrocket（小火箭）</strong>：Shadowrocket爲付費軟體，您可以在App Store自行購買，如果不想購買，您也可以在Google自行搜尋「蘋果公益小火箭帳號」，本站不提供安裝檔。</li>
+		<li><strong>Hiddify</strong>：本站提供安裝檔，您也可以前往App Store 自行下載或根據下方提供的安裝說明安裝。</li>
       </ul>
     </div>
+<h3>.ipa 文件安裝教程</h3>
+<p>.ipa 是蘋果 iOS 應用程序的安裝包格式，用於 iPhone、iPad 和 iPod Touch 等 iOS 設備。以下是如何安裝 `.ipa` 檔案的教程：</p>
+
+<h4>安裝方法 1：使用 Cydia Impactor 安裝（無需越獄）</h4>
+<ol>
+    <li><strong>下載 Cydia Impactor：</strong>前往 <a href="https://cydiaimpactor.app/">Cydia Impactor 官方網站</a> 下載並安裝相應版本。</li>
+    <li><strong>連接 iOS 設備：</strong>使用 USB 線將您的 iPhone、iPad 或 iPod Touch 連接到電腦。</li>
+    <li><strong>啟動 Cydia Impactor：</strong>運行 Cydia Impactor，確認軟體已識別您的設備。</li>
+    <li><strong>拖放 .ipa 文件：</strong>將下載的 `.ipa` 檔案直接拖放到 Cydia Impactor 窗口中。</li>
+    <li><strong>登錄 Apple ID：</strong>輸入您的 Apple ID 和密碼以進行身份驗證。如果您有兩步驟驗證，可能需要生成應用密碼。</li>
+    <li><strong>安裝應用：</strong>等待 Cydia Impactor 完成安裝過程。安裝完成後，應用將顯示在您的設備主屏幕上。</li>
+    <li><strong>信任應用：</strong>在您的設備上，前往“設置”->“通用”->“設備管理”並信任您的 Apple ID，然後打開應用。</li>
+</ol>
+
+<h4>安裝方法 2：使用 AltStore（無需越獄）</h4>
+<ol>
+    <li><strong>下載並安裝 AltStore：</strong>前往 <a href="https://altstore.io/">AltStore 官方網站</a> 下載並安裝 AltStore。</li>
+    <li><strong>安裝 AltServer：</strong>將 AltServer 安裝到您的電腦（Mac 或 Windows）。安裝後，啟動 AltServer 並在設備上設置 AltStore。</li>
+    <li><strong>將設備與電腦連接：</strong>將 iPhone 或 iPad 連接到電腦，並確保 AltServer 可以識別您的設備。</li>
+    <li><strong>使用 AltStore 安裝 .ipa 文件：</strong>將 `.ipa` 文件拖放到 AltStore 中，點擊安裝。</li>
+    <li><strong>信任應用：</strong>完成安裝後，請到“設置”->“通用”->“設備管理”中信任您的 Apple ID。</li>
+</ol>
+
+<h4>安裝方法 3：使用 Xcode 安裝（需越獄）</h4>
+<p>如果您的設備已經越獄，您可以使用 Xcode 或第三方工具直接將 `.ipa` 文件安裝到您的設備中。</p>
+<ol>
+    <li><strong>開啟 Xcode：</strong>將 `.ipa` 檔案加載到 Xcode 中，並選擇您的設備作為目標進行安裝。</li>
+    <li><strong>安裝應用：</strong>Xcode 將自動將應用安裝到設備上。</li>
+</ol>
+
+<h4>注意事項</h4>
+<ul>
+    <li><strong>信任應用：</strong>在 iOS 9 及以上版本，安裝的應用可能需要您手動信任，請在設置->通用->設備管理中完成此操作。</li>
+    <li><strong>Apple ID 限制：</strong>使用免費的 Apple ID 安裝的應用通常只能運行 7 天，過後需要重新安裝。</li>
+    <li><strong>越獄風險：</strong>越獄可能會影響設備的保修，並使其容易遭受安全風險，請謹慎考慮。</li>
+</ul>
 
     <!-- 公益 VPN 訂閱列表 -->
     <div class="bg-green-50 border-l-4 border-green-400 text-green-800 p-4 rounded mb-6 text-left" role="alert">
