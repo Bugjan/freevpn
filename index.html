@@ -139,7 +139,7 @@
 
     <!-- FlClash 使用教學 -->
     <div class="bg-white border border-indigo-300 rounded-xl p-4 text-left mb-6">
-      <h3 class="text-lg font-bold text-indigo-700 mb-2">📱 FlClash 使用教學（Android）</h3>
+      <h3 class="text-lg font-bold text-indigo-700 mb-2">📱 FlClash 使用教學</h3>
       <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
         <li>從 GitHub Releases 頁面下載適合你手機架構的 APK 並安裝。</li>
         <li>打開 FlClash，點下方欄「配置」→右下方「+」，匯入你的 Clash 設定檔（檔案、URL 或 QR code）。</li>
@@ -147,6 +147,77 @@
         <li>確認按鈕狀態為「運行中」，即可正常使用。</li>
         <li>如需調整代理模式（全局、規則、自定義），可於主頁右下方切換。</li>
       </ol>
+	  <h3>Hiddify 使用教學</h3>
+<p>Hiddify 是一款跨平台的代理工具，支援 Android、iOS、Windows、macOS 和 Linux 系統。以下是各平台的基本使用說明：</p>
+
+<hr>
+
+<h4>📱 Android</h4>
+<ol>
+  <li>下載對應架構的 <code>.apk</code> 安裝包並安裝（<em>建議使用 ARM64 或 Universal 版本</em>）。</li>
+  <li>首次啟動時，授予必要權限（例如 VPN 權限）。</li>
+  <li>導入配置：您可以使用 <strong>掃描 QR Code</strong>、<strong>導入配置 URL</strong> 或 <strong>手動添加</strong>。</li>
+  <li>點擊「啟動」按鈕即可連線。</li>
+</ol>
+
+<hr>
+
+<h4>📱 iOS</h4>
+<ol>
+  <li>下載 <code>.ipa</code> 檔案並使用 AltStore、Sideloadly 或其他工具安裝至 iPhone/iPad。</li>
+  <li>前往「設定」→「一般」→「VPN」查看連線狀態。</li>
+  <li>啟動 Hiddify App，匯入配置並啟動服務。</li>
+</ol>
+<p><strong>注意：</strong>未越獄的設備需每 7 天重新簽名（免費 Apple ID）。</p>
+
+<hr>
+
+<h4>🖥️ Windows</h4>
+<ol>
+  <li>下載 <code>.exe</code> 安裝包並安裝，或下載 <code>.zip</code> 便攜版直接解壓運行。</li>
+  <li>首次啟動可能需要授權防火牆存取。</li>
+  <li>點擊「導入配置」→ 選擇配置檔（可使用 QR Code 或 URL）。</li>
+  <li>點擊「啟動」以連接代理。</li>
+</ol>
+
+<hr>
+
+<h4>🖥️ macOS</h4>
+<ol>
+  <li>下載 <code>.dmg</code> 或 <code>.pkg</code> 安裝包，完成安裝。</li>
+  <li>開啟 Hiddify App，導入配置（QR、URL 或手動）。</li>
+  <li>如出現權限提示，請允許建立 VPN 連線。</li>
+  <li>點擊「啟動」開始使用。</li>
+</ol>
+
+<hr>
+
+<h4>🐧 Linux</h4>
+<ol>
+  <li>下載對應的 <code>.AppImage</code> 或 <code>.deb / .rpm</code> 檔案，並安裝或給予執行權限：</li>
+  <pre><code>chmod +x Hiddify-Linux-x64.AppImage</code></pre>
+  <li>執行 Hiddify App 並導入您的配置。</li>
+  <li>點擊「啟動」以建立連線。</li>
+</ol>
+
+<hr>
+
+<h4>🧭 配置方式說明</h4>
+<ul>
+  <li><strong>QR Code：</strong> 使用裝置相機掃描配置二維碼。</li>
+  <li><strong>URL：</strong> 貼上由提供者提供的配置網址（如：<code>https://xxxx.com/abcd</code>）。</li>
+  <li><strong>手動導入：</strong> 將配置檔（如 <code>config.json</code>）手動加入。</li>
+</ul>
+
+<hr>
+
+<h4>❗ 注意事項</h4>
+<ul>
+  <li>部分系統需手動允許 VPN 或代理權限。</li>
+  <li>若應用無法連線，請檢查系統時間、配置是否正確，以及是否被防火牆或其他安全軟體攔截。</li>
+  <li>某些版本系統（如中國地區 iOS 或 MIUI）可能對第三方 VPN 有限制。</li>
+</ul>
+
     </div>
 
     <!-- 聯絡方式 -->
