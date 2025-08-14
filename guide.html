@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VPN 使用教學</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-100 min-h-screen flex justify-center p-6">
+  <div class="bg-white rounded-3xl shadow-2xl max-w-4xl w-full p-8 text-left">
+    <h1 class="text-3xl font-extrabold text-indigo-600 mb-4">📖 VPN 使用教學（多系統 + 架構指南）</h1>
+    <a href="index.html" class="inline-block mb-6 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">🏠 返回首頁</a>
+
+    <!-- Android -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🤖 Android</h2>
+      <p class="text-sm text-gray-700 mb-2">支持 Hiddify / FlClash</p>
+      
+      <h3 class="font-semibold text-indigo-600 mt-2">適用安裝包架構</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>ARM64：</strong>大部分現代 Android 手機</li>
+        <li><strong>ARMv7：</strong>較舊 Android 手機</li>
+        <li><strong>Universal：</strong>支持多種架構的 Android 設備</li>
+        <li><strong>x86_64：</strong>部分基於 x86 的平板或手機</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝與使用教學</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
+        <li>下載對應架構 APK 並安裝。</li>
+        <li>首次啟動授予必要權限（VPN、網路存取）。</li>
+        <li>導入配置：掃描 QR Code / 匯入 URL / 手動添加。</li>
+        <li>點擊「啟動」按鈕即可連線。</li>
+        <li>可切換全局 / 規則 / 自定義模式。</li>
+      </ol>
+    </section>
+
+    <hr class="my-6 border-gray-300">
+
+    <!-- iOS / iPadOS -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🍎 iOS / iPadOS</h2>
+      <p class="text-sm text-gray-700 mb-2">支持 Hiddify / Shadowrocket</p>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">適用安裝包</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>IPA：</strong>適用於 iPhone、iPad、iPod Touch</li>
+        <li>可使用 AltStore / Sideloadly 或 Xcode 安裝</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝教學（無越獄）</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 mb-2">
+        <li>使用 AltStore / Sideloadly 安裝 IPA。</li>
+        <li>前往「設定 → 一般 → VPN」查看連線狀態。</li>
+        <li>啟動 App 並導入配置。</li>
+        <li>免費 Apple ID 每 7 天需重新簽名。</li>
+      </ol>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝教學（越獄設備）</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700">
+        <li>使用 Xcode 或其他工具直接安裝 IPA。</li>
+        <li>完成後打開 App 導入配置。</li>
+      </ol>
+
+      <ul class="text-sm text-yellow-700 mt-2">
+        <li>⚠️ 越獄可能影響保修並增加安全風險。</li>
+        <li>⚠️ 設備需信任 Apple ID 才能打開 App。</li>
+      </ul>
+    </section>
+
+    <hr class="my-6 border-gray-300">
+
+    <!-- Windows -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">💻 Windows</h2>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">適用安裝包架構</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>x64 安裝程式（.exe）：</strong>支持 Windows 7/8/10/11</li>
+        <li><strong>x64 便攜版（.zip）：</strong>無需安裝，直接解壓運行</li>
+        <li><strong>MSIX 安裝包：</strong>支持 Windows 10 以上</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝與使用</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
+        <li>下載並安裝或解壓便攜版。</li>
+        <li>首次啟動授權防火牆存取。</li>
+        <li>導入配置檔（QR / URL / 手動）。</li>
+        <li>點擊「啟動」連線 VPN。</li>
+      </ol>
+    </section>
+
+    <hr class="my-6 border-gray-300">
+
+    <!-- macOS -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🍏 macOS</h2>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">適用安裝包架構</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>Intel pkg / dmg：</strong>配備 Intel CPU 的 Mac</li>
+        <li><strong>Universal dmg：</strong>支持 Intel + Apple Silicon (M1/M2)</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝與使用</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
+        <li>下載安裝包並安裝。</li>
+        <li>開啟 App，導入配置（QR / URL / 手動）。</li>
+        <li>允許建立 VPN 連線的權限。</li>
+        <li>點擊「啟動」開始使用。</li>
+      </ol>
+    </section>
+
+    <hr class="my-6 border-gray-300">
+
+    <!-- Linux -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🐧 Linux</h2>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">適用安裝包架構</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>AppImage x64：</strong>支持大多數 Linux 發行版</li>
+        <li><strong>Debian .deb x64：</strong>Ubuntu / Debian 系統</li>
+        <li><strong>RPM .rpm x64：</strong>Fedora / CentOS / RHEL</li>
+      </ul>
+
+      <h3 class="font-semibold text-indigo-600 mt-2">安裝與使用</h3>
+      <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1">
+        <li>下載對應包並給予執行權限（例如 <code>chmod +x Hiddify-Linux-x64.AppImage</code>）。</li>
+        <li>執行 App 並導入配置。</li>
+        <li>點擊「啟動」連線 VPN。</li>
+      </ol>
+    </section>
+
+    <hr class="my-6 border-gray-300">
+
+    <!-- 配置方式與注意事項 -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🧭 配置方式與注意事項</h2>
+      <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+        <li><strong>QR Code：</strong>用裝置相機掃描二維碼</li>
+        <li><strong>URL：</strong>貼上提供者的配置網址</li>
+        <li><strong>手動導入：</strong>將 <code>config.json</code> 或其他配置檔加入 App</li>
+      </ul>
+
+      <ul class="list-disc list-inside text-sm text-yellow-700">
+        <li>部分系統需手動允許 VPN / 代理權限</li>
+        <li>若無法連線，請檢查系統時間、配置、以及防火牆 / 安全軟體</li>
+        <li>中國地區 iOS / MIUI 系統可能對第三方 VPN 有限制</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
