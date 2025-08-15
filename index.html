@@ -32,28 +32,21 @@
       </ul>
     </div>
 
-    <!-- VPN 訂閱列表 -->
+    <!-- 區域 1：公益 VPN 訂閱列表 -->
     <div class="bg-green-50 border-l-4 border-green-400 text-green-800 p-4 rounded mb-6 text-left" role="alert">
       <h2 class="text-xl font-bold mb-2">🧩 公益 VPN 訂閱列表</h2>
       <p class="mb-2">以下是我們提供的公益節點訂閱連結，請依據你的客戶端選擇適用版本：</p>
 
-      <!-- 原 VLESS / Trojan 訂閱 -->
-	  <p class="font-semibold text-green-600 mt-2">🚀 Clash Meta/FlClash 節點訂閱</p>
+      <p class="font-semibold text-green-600 mt-2">🚀 Clash Meta/FlClash 節點訂閱</p>
       <div class="flex items-center mb-2">
         <input type="text" id="vless" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb3.pykgpp.dpdns.org/sub/6a8796bf-ec16-4d87-b889-db82ce188d64?app=clash#BPB-Full-Normal">
         <button onclick="copyText('vless')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
       </div>
 	  
-	   <p class="font-semibold text-green-600 mt-2">🚀 VLESS 節點訂閱</p>
+      <p class="font-semibold text-green-600 mt-2">🚀 VLESS 節點訂閱</p>
       <div class="flex items-center mb-2">
-        <input type="text" id="vless" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.pykgpp.dpdns.org/48869bb7-60ba-46a6-b0ab-60474ed6e6e5?sub">
-        <button onclick="copyText('vless')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
-      </div>
-	  
-      <p class="font-semibold text-green-600 mt-2">🚀 VLESS 節點</p>
-      <div class="flex items-center mb-2">
-        <input type="text" id="vless" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="vless://1d470271-38b9-4d81-996b-8f610bb1f1cd@35.212.232.190:35066?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=4r1uLnWs4m_Y05oRP3tCNDT6LBzwCs7h5TdCfwLCrBc&sid=9f634b91&type=tcp&headerType=none#vl-reality-instance-20250814-102053">
-        <button onclick="copyText('vless')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
+        <input type="text" id="vless2" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.pykgpp.dpdns.org/48869bb7-60ba-46a6-b0ab-60474ed6e6e5?sub">
+        <button onclick="copyText('vless2')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
       </div>
 
       <p class="font-semibold text-green-600 mt-2">🚀 Trojan 節點訂閱</p>
@@ -62,32 +55,26 @@
         <button onclick="copyText('trojan')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
       </div>
 
-      <p class="font-semibold text-green-600 mt-2">🚀 VMess 節點</p>
-      <div class="flex items-center mb-2">
-        <input type="text" id="vmess" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="vmess://eyJhZGQiOiIzNS4yMTIuMjMyLjE5MCIsImFpZCI6IjAiLCJob3N0Ijoid3d3LmJpbmcuY29tIiwiaWQiOiIxZDQ3MDI3MS0zOGI5LTRkODEtOTk2Yi04ZjYxMGJiMWYxY2QiLCJuZXQiOiJ3cyIsInBhdGgiOiIxZDQ3MDI3MS0zOGI5LTRkODEtOTk2Yi04ZjYxMGJiMWYxY2Qtdm0iLCJwb3J0IjoiMjA5NSIsInBzIjoidm0td3MtaW5zdGFuY2UtMjAyNTA4MTQtMTAyMDUzIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9Cg==">
-        <button onclick="copyText('vmess')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
-      </div>
-
-      <p class="font-semibold text-green-600 mt-2">🚀 Hysteria-2 節點</p>
-      <div class="flex items-center mb-2">
-        <input type="text" id="hysteria" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="hysteria2://1d470271-38b9-4d81-996b-8f610bb1f1cd@35.212.232.190:20290?security=tls&alpn=h3&insecure=1&sni=www.bing.com#hy2-instance-20250814-102053">
-        <button onclick="copyText('hysteria')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
-      </div>
-
-      <p class="font-semibold text-green-600 mt-2">🚀 Tuic-v5 節點</p>
-      <div class="flex items-center mb-2">
-        <input type="text" id="tuic" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="tuic://1d470271-38b9-4d81-996b-8f610bb1f1cd:1d470271-38b9-4d81-996b-8f610bb1f1cd@35.212.232.190:31885?congestion_control=bbr&udp_relay_mode=native&alpn=h3&sni=www.bing.com&allow_insecure=1#tu5-instance-20250814-102053">
-        <button onclick="copyText('tuic')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
-      </div>
-
-      <p class="font-semibold text-green-600 mt-2">🚀 四合一聚合訂閱</p>
-      <div class="flex items-center mb-2">
-        <input type="text" id="multi" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="dmxlc3M6Ly8xZDQ3MDI3MS0zOGI5LTRkODEtOTk2Yi04ZjYxMGJiMWYxY2RAMzUuMjEyLjIzMi4xOTA6MzUwNjY/...">
-        <button onclick="copyText('multi')" class="ml-2 bg-green-500 text-white px-2 py-1 rounded text-sm">複製</button>
-      </div>
-
       <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 mt-4 rounded text-sm">
         ⚠️ <strong>注意：</strong>本站僅提供 VPN 節點的搭建與公益分享服務，<strong>不保證連線穩定性、速度或串流平台解鎖能力</strong>，請理性使用。
+      </div>
+    </div>
+
+    <!-- 區域 2：Kann 公益 VPN 訂閱列表 -->
+    <div class="bg-purple-50 border-l-4 border-purple-400 text-purple-800 p-4 rounded mb-6 text-left" role="alert">
+      <h2 class="text-xl font-bold mb-2">🧩 第二版 公益 VPN 訂閱列表</h2>
+      <p class="mb-2">以下是第二版 公益 VPN 的節點訂閱連結：</p>
+
+      <p class="font-semibold text-purple-600 mt-2">🚀 VLESS 節點訂閱</p>
+      <div class="flex items-center mb-2">
+        <input type="text" id="vless-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.kann.dpdns.org/a6f6d53a-5fd3-4cf7-9930-a0e5184dc296?sub">
+        <button onclick="copyText('vless-kann')" class="ml-2 bg-purple-500 text-white px-2 py-1 rounded text-sm">複製</button>
+      </div>
+
+      <p class="font-semibold text-purple-600 mt-2">🚀 Trojan 節點訂閱</p>
+      <div class="flex items-center mb-2">
+        <input type="text" id="trojan-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://trojan.kann.dpdns.org/3ed3a8f4-f88e-46ba-b893-dda7435e130b?sub">
+        <button onclick="copyText('trojan-kann')" class="ml-2 bg-purple-500 text-white px-2 py-1 rounded text-sm">複製</button>
       </div>
     </div>
 
