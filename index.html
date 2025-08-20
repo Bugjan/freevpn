@@ -7,23 +7,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-blue-100 to-indigo-100 min-h-screen flex items-center justify-center p-6">
-  <div class="bg-white rounded-3xl shadow-2xl max-w-4xl w-full p-8 space-y-10">
+  <div class="bg-white rounded-3xl shadow-2xl max-w-5xl w-full p-8 space-y-12">
     
     <!-- 公告區 -->
     <header class="text-center space-y-4">
       <h1 class="text-4xl font-extrabold text-indigo-600">📢 公告訊息</h1>
-      <p class="text-lg text-gray-700">我們致力於提供安全、穩定又免費的 VPN 服務，幫助需要的人突破限制，自由上網。</p>
+      <p class="text-lg text-gray-700 leading-relaxed">我們致力於提供安全、穩定又免費的 VPN 服務，幫助需要的人突破限制，自由上網。</p>
       <a href="guide.html" class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition shadow">📖 VPN 使用教學（多系統 + 架構指南）</a>
     </header>
 
     <!-- 推薦客戶端 -->
-    <section class="bg-indigo-50 border-l-4 border-indigo-400 text-indigo-800 p-6 rounded-2xl space-y-4">
+    <section class="bg-indigo-50 border-l-4 border-indigo-400 text-indigo-800 p-6 rounded-2xl space-y-6">
       <h2 class="text-2xl font-bold">🚀 我們推薦的 VPN 客戶端</h2>
       <p>以下是我們推薦使用的 VPN 應用程式，請根據裝置類型與架構選擇合適的版本：</p>
-      <p class="text-sm text-gray-700">（由於 Github Releases 在中國大陸網路中下載速度有時候會極其慢，甚至完全無法訪問，因此此處準備了 Github 的加速下載站點，您可以考慮使用 Github 加速下載選項進行下載客戶端。）</p>
+      <p class="text-sm text-gray-700 leading-relaxed">（由於 Github Releases 在中國大陸網路中下載速度有時候會極其慢，甚至完全無法訪問，因此此處準備了 Github 的加速下載站點，您可以考慮使用 Github 加速下載選項進行下載客戶端。）</p>
 
+      <!-- 多平台客戶端 -->
       <div class="space-y-3">
-        <h3 class="font-semibold text-indigo-600">Android / Windows / Linux / MacOS 裝置</h3>
+        <h3 class="font-semibold text-indigo-600">Android / Windows / Linux / macOS 裝置</h3>
         <ul class="list-disc list-inside text-gray-800 space-y-2">
           <li><strong>Hiddify</strong>（支援多協議，介面簡單）：<br>
             <a href="https://github.com/hiddify/hiddify-app/releases" target="_blank" class="underline text-blue-600">GitHub Releases</a>
@@ -36,99 +37,133 @@
         </ul>
       </div>
 
+      <!-- Apple 客戶端 -->
       <div class="space-y-3">
         <h3 class="font-semibold text-indigo-600">Apple 裝置</h3>
         <ul class="list-disc list-inside text-gray-800 space-y-2">
-          <li><strong>Shadowrocket</strong>：付費軟體，需非中國區 Apple ID 購買，本站提供公益的 Shadowrocket 賬號分享站：<a href="https://ccbaohe.com/appleID/" class="underline text-blue-600" target="_blank">https://ccbaohe.com/appleID/</a> 。<br>
-          ⚠️ 請注意：該分享站非本站所有，請注意甄別內容。若在手機「設定」中以共享賬號登入 Apple ID，有可能導致手機被「尋找我的 iPhone」鎖定。請切記僅在 App Store 登入使用。</li>
-          <li><strong>Hiddify</strong>：可於非中國區 App Store 免費取得，上方也提供 ipa 安裝檔，可依據教學區安裝。</li>
+          <li><strong>Shadowrocket</strong>：付費軟體，需非中國區 Apple ID 購買。本站提供公益的 <a href="https://ccbaohe.com/appleID/" class="underline text-blue-600" target="_blank">Shadowrocket 賬號分享站</a>。<br>
+          ⚠️ 請注意：該分享站非本站所有，請注意甄別內容。若直接在「設定」登入共享 Apple ID，可能導致手機被鎖定。請切記僅在 App Store 登入使用。</li>
+          <li><strong>Hiddify</strong>：可於非中國區 App Store 免費取得，上方也提供 ipa 安裝檔。</li>
         </ul>
       </div>
     </section>
 
     <!-- 公益 VPN 訂閱列表 -->
-    <section class="bg-green-50 border-l-4 border-green-400 text-green-800 p-6 rounded-2xl space-y-4">
-      <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 rounded text-sm">
-    ⚠️ <strong>注意：</strong>此板塊節點近期懷疑被惡意機器人大量請求，服務可能不穩定，在每天的一段時間內都可能完全無法使用。如果此板塊中的 VPN 訂閱不可用，您可以考慮使用第二版 VPN 訂閱列表。同時，為了防止惡意機器人再對第二版 VPN 大量發送請求，第二版 VPN 的訂閱鏈接在未來可能會被移轉到其他網域，因此，<strong>強烈建議您將本網站 <code>freevpn.pykgpp.dpdns.org</code> 添加到收藏夾，以免失聯</strong>。
-  </div>
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded mb-6" role="alert">
-      <p class="font-bold">重要通知：</p>
-      <p>本板塊將於 <strong>香港標準時間 2025 年 8 月 20 日 12:00</strong> 至 <strong>8 月 20 日 15:00</strong> 進行系統維護，期間本板塊將暫停所有服務，請妥善安排使用時間。</p>
-    </div>
-  
+    <section class="bg-green-50 border-l-4 border-green-400 text-green-800 p-6 rounded-2xl space-y-6">
+      <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 rounded text-sm leading-relaxed">
+        ⚠️ <strong>請注意：</strong>此板塊節點近期懷疑被惡意機器人大量請求，服務可能不穩定，在每天的一段時間內都可能完全無法使用。雖然我們已經於(UTC+8:00)2025 年 8月 20 日 12:00-15:00更新了我們的 VPN 訂閱列表，但我們仍然需要一段時間觀察行動是否有效。如果本板塊中的 VPN 訂閱列表不可用，您可以考慮使用第二版 VPN 訂閱列表。同時，爲了防止惡意機器人再對第二版 VPN 大量發送請求，第二版 VPN 的訂閱鏈接在未來可能會被移轉到其他網域，因此，<strong>強烈建議您將本網站 <code>freevpn.pykgpp.dpdns.org</code> 添加到收藏夾，以免失聯。</strong>
+      </div>
+
       <h2 class="text-2xl font-bold">🧩 公益 VPN 訂閱列表</h2>
-      <p>以下是我們提供的公益節點訂閱連結，請依據你的客戶端選擇適用版本：</p>
+      <p>請依據客戶端類型選擇適用版本：</p>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-green-600 block">🚀 Clash Meta / FlClash 節點訂閱</label>
+      <!-- 節點列表 -->
+      <div class="space-y-5">
+        <div>
+          <label class="font-semibold text-green-600 block">🚀 Normal 訂閱（v2rayNG / MahsaNG / v2rayN / v2rayN-PRO / Shadowrocket / Streisand / Hiddify）</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="bpb-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.pykgpp.dpdns.org/sub/normal/31a85bd2-1df4-46ae-acf1-6ca88fc62f9b#BPBNormal">
+            <button onclick="copyText('bpb-normal')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="font-semibold text-green-600 block">🚀 Normal 訂閱（husi / Nekobox / Nekoray / Karing）</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="bpb-normal-singbox" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.pykgpp.dpdns.org/sub/normal/31a85bd2-1df4-46ae-acf1-6ca88fc62f9b?app=singbox#BPBNormal">
+            <button onclick="copyText('bpb-normal-singbox')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="font-semibold text-green-600 block">🚀 Full Normal 訂閱（Clash Meta / Clash Verge / FlClash / Stash / v2rayN(mihomo)）</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="bpb-full-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.pykgpp.dpdns.org/sub/full-normal/31a85bd2-1df4-46ae-acf1-6ca88fc62f9b?app=clash#BPBFullNormal">
+            <button onclick="copyText('bpb-full-normal')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
+        </div>
+		
+		      <div class="space-y-3">
+        <label class="font-semibold text-green-600 block">🚀 Full Normal 訂閱（適用 sing-box、V2RayN(sing-box)）</label>
         <div class="flex items-center gap-2">
-          <input type="text" id="vless" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb3.pykgpp.dpdns.org/sub/6a8796bf-ec16-4d87-b889-db82ce188d64?app=clash#BPB-Full-Normal">
-          <button onclick="copyText('vless')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          <input type="text" id="bpb-full-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.pykgpp.dpdns.org/sub/full-normal/31a85bd2-1df4-46ae-acf1-6ca88fc62f9b?app=sfa#%F0%9F%92%A6%20BPB%20Full%20Normal">
+          <button onclick="copyText('bpb-full-normal')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
         </div>
       </div>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-green-600 block">🚀 VLESS 節點訂閱</label>
-        <div class="flex items-center gap-2">
-          <input type="text" id="vless2" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.pykgpp.dpdns.org/48869bb7-60ba-46a6-b0ab-60474ed6e6e5?sub">
-          <button onclick="copyText('vless2')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+        <div>
+          <label class="font-semibold text-green-600 block">🚀 VLESS 節點訂閱</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="vless2" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.pykgpp.dpdns.org/48869bb7-60ba-46a6-b0ab-60474ed6e6e5?sub">
+            <button onclick="copyText('vless2')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="font-semibold text-green-600 block">🚀 Trojan 節點訂閱</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="trojan" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://trojan.pykgpp.dpdns.org/trojan">
+            <button onclick="copyText('trojan')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
         </div>
       </div>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-green-600 block">🚀 Trojan 節點訂閱</label>
-        <div class="flex items-center gap-2">
-          <input type="text" id="trojan" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://trojan.pykgpp.dpdns.org/5e19e9a7-e258-43ee-bdab-dea75940e165">
-          <button onclick="copyText('trojan')" class="bg-green-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
-        </div>
-      </div>
-
-      <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 rounded text-sm">
-        ⚠️ 本站僅提供 VPN 節點公益分享，不保證連線穩定性、速度或串流平台解鎖能力，請理性使用。
+      <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-3 rounded text-sm leading-relaxed">
+        ⚠️ 本站僅提供節點公益分享，不保證連線穩定性、速度或串流平台解鎖能力，請理性使用。
       </div>
     </section>
 
     <!-- 第二版 公益 VPN 訂閱列表 -->
-    <section class="bg-purple-50 border-l-4 border-purple-400 text-purple-800 p-6 rounded-2xl space-y-4">
+    <section class="bg-purple-50 border-l-4 border-purple-400 text-purple-800 p-6 rounded-2xl space-y-6">
       <h2 class="text-2xl font-bold">🧩 第二版 公益 VPN 訂閱列表</h2>
-      <p>以下是第二版 公益 VPN 的節點訂閱連結：</p>
+      <p>以下為第二版節點訂閱連結：</p>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-purple-600 block">🚀 VLESS 節點訂閱</label>
-        <div class="flex items-center gap-2">
-          <input type="text" id="vless-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.kann.dpdns.org/a6f6d53a-5fd3-4cf7-9930-a0e5184dc296?sub">
-          <button onclick="copyText('vless-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+      <div class="space-y-5">
+        <div>
+          <label class="font-semibold text-purple-600 block">🚀 VLESS 節點訂閱</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="vless-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://vless.kann.dpdns.org/a6f6d53a-5fd3-4cf7-9930-a0e5184dc296?sub">
+            <button onclick="copyText('vless-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
         </div>
-      </div>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-purple-600 block">🚀 Trojan 節點訂閱</label>
-        <div class="flex items-center gap-2">
-          <input type="text" id="trojan-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://trojan.kann.dpdns.org/3ed3a8f4-f88e-46ba-b893-dda7435e130b?sub">
-          <button onclick="copyText('trojan-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+        <div>
+          <label class="font-semibold text-purple-600 block">🚀 Trojan 節點訂閱</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="trojan-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://trojan.kann.dpdns.org/3ed3a8f4-f88e-46ba-b893-dda7435e130b?sub">
+            <button onclick="copyText('trojan-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
         </div>
-      </div>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-purple-600 block">Normal 訂閱</label>
-        <div class="flex items-center gap-2">
-          <input type="text" id="bpb-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2#%F0%9F%92%A6%20BPB%20Normal">
-          <button onclick="copyText('bpb-normal')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+        <div>
+          <label class="font-semibold text-purple-600 block">🚀 Normal 訂閱（v2rayNG / MahsaNG / v2rayN / Shadowrocket / Hiddify）</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="bpb-normal-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2#BPBNormal">
+            <button onclick="copyText('bpb-normal-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
         </div>
-      </div>
-
-      <div class="space-y-3">
-        <label class="font-semibold text-purple-600 block">Normal Sing-Box 訂閱</label>
+		
+		      <div class="space-y-3">
+        <label class="font-semibold text-purple-600 block">🚀 Normal 訂閱（適用 husi、Nekobox、Nekoray、Karing）</label>
         <div class="flex items-center gap-2">
           <input type="text" id="bpb-normal-singbox" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2?app=singbox#%F0%9F%92%A6%20BPB%20Normal">
           <button onclick="copyText('bpb-normal-singbox')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
         </div>
       </div>
 
-      <div class="space-y-3">
-        <label class="font-semibold text-purple-600 block">Full Normal 訂閱</label>
+        <div>
+          <label class="font-semibold text-purple-600 block">🚀 Full Normal 訂閱（Clash Meta / FlClash / Stash / v2rayN(mihomo)）</label>
+          <div class="flex items-center gap-2 mt-1">
+            <input type="text" id="bpb-full-normal-kann" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/full-normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2?app=clash#BPBFullNormal">
+            <button onclick="copyText('bpb-full-normal-kann')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
+          </div>
+        </div>
+      </div>
+	  
+	        <div class="space-y-3">
+        <label class="font-semibold text-purple-600 block">🚀 Full Normal 訂閱（適用 sing-box、V2RayN(sing-box)）</label>
         <div class="flex items-center gap-2">
-          <input type="text" id="bpb-full-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/full-normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2?app=clash#%F0%9F%92%A6%20BPB%20Full%20Normal">
+          <input type="text" id="bpb-full-normal" class="flex-1 border rounded px-2 py-1 text-gray-800 text-sm" readonly value="https://bpb.kann.dpdns.org/sub/full-normal/d1f6a1db-1dab-4b5c-bd59-40f60f1947c2?app=sfa#%F0%9F%92%A6%20BPB%20Full%20Normal">
           <button onclick="copyText('bpb-full-normal')" class="bg-purple-500 text-white px-3 py-1 rounded text-sm shadow">複製</button>
         </div>
       </div>
@@ -136,7 +171,7 @@
 
     <!-- Footer -->
     <footer class="text-sm text-gray-500 text-center space-y-1">
-      <p>若有問題請聯絡：<a href="mailto:Bugjang3@proton.me" class="underline text-indigo-800">Bugjang3@proton.me</a></p>
+      <p>若有問題請聯絡：<a href="mailto:admin@pykgpp.dpdns.org" class="underline text-indigo-800">admin@pykgpp.dpdns.org</a></p>
       <p>&copy; 2025 公益 VPN 分享站</p>
     </footer>
   </div>
