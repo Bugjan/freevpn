@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VPN使用教程</title>
+<style>
+body{font-family:sans-serif;background:#f5f7fa;margin:0;padding:20px;line-height:1.7}
+.container{max-width:980px;margin:auto;background:#fff;padding:30px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+h1,h2,h3{line-height:1.3}
+h1{margin-top:0}
+.btn{display:inline-block;padding:8px 14px;border-radius:8px;background:#2563eb;color:#fff;text-decoration:none;margin-right:10px}
+.lang{margin-bottom:20px;display:flex;flex-wrap:wrap;gap:10px}
+.hidden{display:none}
+video{width:100%;margin:10px 0;border-radius:8px;background:#000}
+.icon{width:18px;height:18px;vertical-align:middle;object-fit:contain}
+.section{margin:26px 0}
+.warning{background:#fff7e6;border-left:5px solid #f59e0b;padding:14px 16px;border-radius:8px}
+</style>
+<script>
+function switchLang(lang){
+ document.getElementById('trad').classList.toggle('hidden',lang!=='trad');
+ document.getElementById('simp').classList.toggle('hidden',lang!=='simp');
+}
+</script>
+</head>
+<body>
+<div class="container">
+
+<div class="lang">
+<a class="btn" href="#" onclick="switchLang('trad');return false;">正體</a>
+<a class="btn" href="#" onclick="switchLang('simp');return false;">简体</a>
+<a class="btn" href="index.html">返回主頁面</a>
+</div>
+
+<!-- 繁體 -->
+<div id="trad">
+<h1>VPN使用教程</h1>
+
+<div class="warning">
+<p>⚠️重要提示：根據網路上的一些資料說明，中共的「國家反詐中心」應用程式可能具有監測手機上的VPN並自動通報警方的功能。</p>
+<p>即使網路上的內容僅為傳言，「國家反詐中心」也是一款由中共開發的應用程式(APP)，同時從其明面上的行為來看，其已經掌握過多的手機權限和收集過多的資訊，並且幾乎一定會將這些手機資訊上傳至中共的內部平台。</p>
+<p>同時，要求使中國民眾的手機上安裝「國家反詐中心」的要求也不再作為政治任務下發，並且在翻牆後常會出現的一些操作(如出現大量跨境流量、和境外的電話號碼產生較多往來)時，可能導致其誤報「正在遭受境外電詐風險」，但在實際防騙用途中，其效用反而往往不理想。</p>
+<p>因此，我強烈建議不要在安裝有「國家反詐中心」的裝置上使用VPN，即使不使用VPN，也應卸載「國家反詐中心」。</p>
+</div>
+
+<div class="section">
+<h2>二、不要在華為手機上使用VPN，尤其是在運行HarmonyOS的新款裝置上。</h2>
+<p>HarmonyOS和Android相比，是一個閉源的系統(OpenHarmony實際上是於前者不同的系統)，這就意味著其代碼無法被審計是否存在監視後門等，並且還有一個非常關鍵的因素：華為是一家和中共有極其密切關連的企業。因此，縱上所述，在華為裝置上使用VPN風險極高，其他的中國品牌中國版本(在中國大陸販售的機器)同樣如此，只是華為的風險相對較高，如果可以的話，建議將手機刷機到同款手機的國際板韌體或直接購買國際板的手機(也建議不要購買中國品牌手機的國際版本)。</p>
+</div>
+
+<div class="section">
+<h2>三、不要在大學校園網(中國大陸)網路環境下使用VPN。</h2>
+<p>原因非常簡單：絕大部分的中國高校均在均在校園網路系統中，均安裝了特殊的網路流量檢查系統，其會重點識別出Vmess、Shadowsocks、ShadowsocksR等VPN協議常用的流量模式，並且校園網是與使用者的學生身分高度綁定的，目前根據網路上的一些內容，已有不少因在校園網使用VPN而導致收到學校提醒甚至被輔導員約談等的案例發生。</p>
+</div>
+
+<div class="section">
+<h2>四、當無法保證自身隱密性時，永遠不要在公共社群媒體上發表過多內容。</h2>
+<p>我可以用一個非常言簡易骸來解釋為什麼：樹大招風。具體來說就是如果你的關注度越高，警方對你的關注度同樣越高，之後的事情就不需要我多說了。</p>
+</div>
+
+<div class="section">
+<h2>五、永遠將自己的安全與隱私放在第一位，而不是方便性。</h2>
+<p>如上所述，此處無需再過多解釋，此處給出的幾點建議，如果可以的話，盡量做到以下幾點，能大大提高您的隱私性，此處將不做過多解釋：</p>
+<ol>
+<li>不要使用中國大陸電話號碼註冊牆外服務(如Google、Telegram等)，可以持有一個非中國電話號碼來解決註冊牆外服務需要電話號碼的問題。</li>
+<li>同樣不要使用中國大陸廠商的電子郵件來註冊牆外服務。如果需要註冊GMail，你就需要一個電話號碼或電子郵箱，如果一開始就沒有境外號碼，這就涉及到一個先有雞還是先有蛋的問題，對此我推薦你使用Protonmail，它無須上面的一些關聯，但其最近收緊了對非家用IP的限制，必須使用電郵或電話號碼驗證，你可以使用家寬IP來註冊，這樣就可以只需要CAPTCHA即可註冊。</li>
+<li>付款儘量加密貨幣/匿名化。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Android</h2>
+<p>此處以FlClash做演示。</p>
+<video controls>
+<source src="files/Android.mkv" type="video/x-matroska">
+您的瀏覽器不支援影片播放。
+</video>
+<ol>
+<li>安裝FlClash（如何選擇安裝包的教程已附於最後處）</li>
+<li>打開FlClash，選擇下方欄內的「配置」，點擊右下角的「+」</li>
+<li>選擇「URL」，貼上訂閱鏈接。</li>
+<li>點擊下方欄內的「代理」，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，測試節點延遲，並選擇自己所需的節點。如果節點顯示Timeout即爲無法聯通，請勿選擇。</li>
+<li>回到下方欄內「儀表盤」，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按鈕，並根據需要選擇出站模式（如何選擇已經附於最後處），並同意VPN請求。</li>
+<li>訪問Google（www.google.com），檢查VPN是否正常運作。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Windows</h2>
+<p>此處以FlClash做演示。</p>
+<video controls>
+<source src="files/Windows.mkv" type="video/x-matroska">
+您的瀏覽器不支援影片播放。
+</video>
+<ol>
+<li>安裝FlClash。（如何選擇軟體包已經附於最後處。）</li>
+<li>打開FlClash，選擇下方欄內的「配置」，點擊右下角的「+」</li>
+<li>選擇「URL」，貼上訂閱鏈接。</li>
+<li>點擊下方欄內的「代理」，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，測試節點延遲，並選擇自己所需的節點。如果節點顯示Timeout即爲無法聯通，請勿選擇。</li>
+<li>回到下方欄內「儀表盤」，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按鈕，並根據需要選擇出站模式（如何選擇已經附於最後處）、並根據需要打開系統代理、虛擬網卡。</li>
+<li>訪問Google（www.google.com），檢查VPN是否正常運作。</li>
+</ol>
+
+<h3>系統代理、虛擬網卡應該如何選擇？</h3>
+<p><strong>系統代理：</strong>將系統的Proxy設定伺服器更改爲127.0.0.1:7891，對系統相容性較好，但對一些遊戲下載的P2P協議等可能不理會系統代理設定的流量可能有bug，導致實際上並未走Clash出站。</p>
+<p><strong>虛擬網卡：</strong>再系統內創建一個虛擬的網卡，可以強制所有流量均必須通過Clash出站，但在部分系統上可能無法正常使用。</p>
+</div>
+
+<div class="section">
+<h2>Linux</h2>
+<p>此處以Ubuntu+FlClash做演示，其他發行版同樣類似，請根據自己的發行版下載對應的安裝包。</p>
+<video controls>
+<source src="files/Ubuntu.mkv" type="video/x-matroska">
+您的瀏覽器不支援影片播放。
+</video>
+<ol>
+<li>安裝FlClash。（如何選擇軟體包已經附於最後處。）</li>
+<li>打開FlClash，選擇下方欄內的「配置」，點擊右下角的「+」</li>
+<li>選擇「URL」，貼上訂閱鏈接。</li>
+<li>點擊下方欄內的「代理」，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，測試節點延遲，並選擇自己所需的節點。如果節點顯示Timeout即爲無法聯通，請勿選擇。</li>
+<li>回到下方欄內「儀表盤」，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按鈕，並根據需要選擇出站模式（如何選擇已經附於最後處）、並根據需要打開系統代理、虛擬網卡。</li>
+<li>訪問Google（www.google.com），檢查VPN是否正常運作。</li>
+</ol>
+
+<h3>系統代理、虛擬網卡應該如何選擇？</h3>
+<p><strong>系統代理：</strong>將系統的Proxy設定伺服器更改爲127.0.0.1:7891，對系統相容性較好，但對一些遊戲下載的P2P協議等可能不理會系統代理設定的流量可能有bug，導致實際上並未走Clash出站。</p>
+<p><strong>虛擬網卡：</strong>再系統內創建一個虛擬的網卡，可以強制所有流量均必須通過Clash出站，但在部分系統上可能無法正常使用。</p>
+</div>
+
+<div class="section">
+<h2>iOS/iPadOS</h2>
+<p>由於本人沒有運行iOS的裝置，只能在此貼上GitHub bannedbook/fanqiang/ios/shadowrocket.md中適合本站的內容，並且針對本站特性稍作更改，在此鄭重感謝原作者的辛苦奉獻！</p>
+<h3>Shadowrocket小火箭配置使用教學課程</h3>
+<p><strong>應用概述</strong><br>Shadowrocket 是在 iOS 平台上的用戶端軟體，支援 Shadowsocks、ShadowsocksR 以及 VMess等協定。</p>
+<p>目前 Shadowrocket 已經被 Apple 根據政府要求從中國大陸區的 App Store 移除，先前在中國大陸商店購買此軟體的用戶將無法獲得更新或重新下載。 請確保從蘋果商店下載最新版小火箭，如果您不是最新版，請升級到最新版。</p>
+<p><strong>如何獲取Shadowrocket？</strong><br>請造訪我們的公益VPN主站，那裏有具體的獲取說明。</p>
+<p>打開App Store，登入獲取到的分享賬號（如果在設定處登入且打開「尋找我的裝置」功能，可能導致裝置被此功能鎖定，請切記僅在App Store登入。），隨後搜尋「Shadowrocket」，點擊「安裝」按鈕。</p>
+<p><strong>配置 Shadowrocket</strong><br>打開Shadowrocket，在首頁處點擊右上角的加號，再次點擊第一行的「類型」，選擇 Subscribe。</p>
+<p>在「備註」中輸入本站名稱，隨後在「URL」中貼上上方 取得訂閱 中的訂閱連結並儲存。</p>
+<p>隨後點選右上角儲存，此時會自動更新取得伺服器。</p>
+<p>Shadowrocket手工更新訂閱方法： 點「伺服器節點」最上方的訂閱連結右邊的「i」圖標，然後再點右上角的「完成」。</p>
+<p>取得節點後，點選選取一個節點，然後點介面右上角的"未連接"開關，即可開啟VPN連線自由上網。</p>
+</div>
+
+<div class="section">
+<h2>macOS</h2>
+<p>此處以FlClash做演示。</p>
+<ol>
+<li>安裝FlClash。（如何選擇軟體包已經附於最後處。）</li>
+<li>打開FlClash，選擇下方欄內的「配置」，點擊右下角的「+」</li>
+<li>選擇「URL」，貼上訂閱鏈接。</li>
+<li>點擊下方欄內的「代理」，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，測試節點延遲，並選擇自己所需的節點。如果節點顯示Timeout即爲無法聯通，請勿選擇。</li>
+<li>回到下方欄內「儀表盤」，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按鈕，並根據需要選擇出站模式（如何選擇已經附於最後處）、並根據需要打開系統代理、虛擬網卡。</li>
+<li>訪問Google（www.google.com），檢查VPN是否正常運作。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>各安裝包架構、適用指南</h2>
+<h3>Android：</h3>
+<ul>
+<li>arm64（又稱armv8或aarch64）：目前最主流的Android手機處理器指令集之一，2016年以後的Android手機絕大部分都用此指令集。</li>
+<li>Aremabi-v7a：大多在較早的Android手機上使用。</li>
+<li>X86（x86_64）部分特殊裝置可用，如Android-x86等。</li>
+<li>Universal：通用安裝包，如果有的話可以直接無腦選。</li>
+</ul>
+<h3>Windows：</h3>
+<ul>
+<li>X86（IA-32）：最古早的也是最廣泛的PC指令集之一，如今新電腦基本只有裝錯系統才會用，並且Hiddify、FlClash，均沒有x86版本，如果需要x86/Windows7/8版本，請使用Clash Party。</li>
+<li>X86_64：目前最廣泛的指令集，如果是2010年後的新電腦，基本就可以選。</li>
+<li>IA-64：家用市場普及度過低，不做介紹。</li>
+<li>Arm64：大量用於輕量化的裝置，如搭載Windows RT/Windows on ARM的Surface、Windows平板電腦等。</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>不同的出站模式有什麼區別？</h2>
+<ul>
+<li><strong>規則：</strong>按照GeoIP、自定義規則等，自動匹配需要通過代理的網站、IP。</li>
+<li><strong>全局：</strong>無論如何，所有進入Clash的流量全部均會通過代理訪問，如果需要改變訪問國內網站時的IP等需求，請選擇此模式。</li>
+<li><strong>直連：</strong>所有流量均不經過代理，體驗約等於沒有打開VPN。</li>
+</ul>
+</div>
+
+</div>
+
+<!-- 簡體 -->
+<div id="simp" class="hidden">
+<h1>VPN使用教程</h1>
+
+<div class="warning">
+<p>⚠️重要提示：根据网络上的一些资料说明，中共的“国家反诈中心”应用程序可能具有监测手机上的VPN并自动上报警方的功能。</p>
+<p>即使网络上的内容仅为传言，“国家反诈中心”也是一款由中共开发的应用程序(APP)，同时从其明面上的行为来看，其已经掌握过多的手机权限和收集过多的信息，并且几乎一定会将这些手机信息上传至中共的内部平台。</p>
+<p>同时，要求使中国民众的手机上安装“国家反诈中心”的要求也不再作为政治任务下发，并且在翻墙后常会出现的一些操作(如出现大量跨境流量、和境外的电话号码产生较多往来)时，可能导致其误报“正在遭受境外电诈风险”，但在实际防骗用途上，其效用反而往往不理想。</p>
+<p>因此，我强烈建议不要在安装有“国家反诈中心”的装置上使用VPN，即使不使用VPN，也应卸载“国家反诈中心”。</p>
+</div>
+
+<div class="section">
+<h2>二、不要在华为手机上使用VPN，尤其是在运行HarmonyOS的新款设备上。</h2>
+<p>HarmonyOS和Android相比，是一个闭源的系统(OpenHarmony实际上是与前者不同的系统)，这就意味着其代码无法被审计是否存在监视后门等，并且还有一个非常关键的因素：华为是一家和中共有极其密切关联的企业。因此，综上所述，在华为设备上使用VPN风险极高，其他的中国品牌中国版本(在中国大陆发售的机器)同样如此，只是华为的风险相对较高，如果可以的话，建议将手机刷机到同款手机的国际版固件或直接购买国际版的手机(也建议不要购买中国品牌手机的国际版本)。</p>
+</div>
+
+<div class="section">
+<h2>三、不要在大学校园网(中国大陆)网络环境下使用VPN。</h2>
+<p>原因非常简单：绝大部分的中国高校均在均在校园网络系统中，均安装了特殊的网络流量检查系统，其会重点识别出Vmess、Shadowsocks、ShadowsocksR等VPN协议常用的流量模式，并且校园网是与用户的学生身份高度绑定的，目前根据网络上的一些内容，已有不少因在校园网使用VPN而导致收到学校提醒甚至被辅导员约谈等的案例发生。</p>
+</div>
+
+<div class="section">
+<h2>四、当无法保证自身隐秘性时，永远不要在公共社交媒体上发表过多内容。</h2>
+<p>我可以用一个非常言简意赅来解释为什么：树大招风。具体来说就是如果你的关注度越高，警方对你的关注度同样越高，之后的事情就不需要我多说了。</p>
+</div>
+
+<div class="section">
+<h2>五、永远将自己的安全与隐私放在第一位，而不是方便性。</h2>
+<p>如上所述，此处无需再过多解释，此处给出的几点建议，如果可以的话，尽量做到以下几点，能大大提高您的隐私性，此处将不做过多解释：</p>
+<ol>
+<li>不要使用中国大陆电话号码注册墙外服务(如Google、Telegram等)，可以持有一个非中国电话号码来解决注册墙外服务需要电话号码的问题。</li>
+<li>同样不要使用中国大陆厂商的电子邮件来注册墙外服务。如果需要注册GMail，你就需要一个电话号码或电子邮箱，如果一开始就没有境外号码，这就涉及到一个先有鸡还是先有蛋的问题，对此我推荐你使用Protonmail，它无须上面的一些关联，但其最近收紧了对非家用IP的限制，必须使用电邮或电话号码验证，你可以使用家宽IP来注册，这样就可以只需要CAPTCHA即可注册。</li>
+<li>付款尽量加密货币/匿名化。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Android</h2>
+<p>此处以FlClash做演示。</p>
+<video controls>
+<source src="files/Android.mkv" type="video/x-matroska">
+您的浏览器不支持影片播放。
+</video>
+<ol>
+<li>安装FlClash（如何选择安装包的教程已附于最后处）</li>
+<li>打开FlClash，选择下方栏内的“配置”，点击右下角的“+”</li>
+<li>选择“URL”，贴上订阅链接。</li>
+<li>点击下方栏内的“代理”，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，测试节点延迟，并选择自己所需的节点。如果节点显示Timeout即为无法联通，请勿选择。</li>
+<li>回到下方栏内“仪表盘”，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按钮，并根据需要选择出站模式（如何选择已经附于最后处），并同意VPN请求。</li>
+<li>访问Google（www.google.com），检查VPN是否正常运作。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Windows</h2>
+<p>此处以FlClash做演示。</p>
+<video controls>
+<source src="files/Windows.mkv" type="video/x-matroska">
+您的浏览器不支持影片播放。
+</video>
+<ol>
+<li>安装FlClash。（如何选择软件包已经附于最后处。）</li>
+<li>打开FlClash，选择下方栏内的“配置”，点击右下角的“+”</li>
+<li>选择“URL”，贴上订阅链接。</li>
+<li>点击下方栏内的“代理”，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，测试节点延迟，并选择自己所需的节点。如果节点显示Timeout即为无法联通，请勿选择。</li>
+<li>回到下方栏内“仪表盘”，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按钮，并根据需要选择出站模式（如何选择已经附于最后处）、并根据需要打开系统代理、虚拟网卡。</li>
+<li>访问Google（www.google.com），检查VPN是否正常运作。</li>
+</ol>
+
+<h3>系统代理、虚拟网卡应该如何选择？</h3>
+<p><strong>系统代理：</strong>将系统的Proxy设置服务器更改为127.0.0.1:7891，对系统兼容性较好，但对一些游戏下载的P2P协议等可能不理会系统代理设置的流量可能有bug，导致实际上并未走Clash出站。</p>
+<p><strong>虚拟网卡：</strong>在系统内创建一个虚拟的网卡，可以强制所有流量均必须通过Clash出站，但在部分系统上可能无法正常使用。</p>
+</div>
+
+<div class="section">
+<h2>Linux</h2>
+<p>此处以Ubuntu+FlClash做演示，其他发行版同样类似，请根据自己的发行版下载对应的安装包。</p>
+<video controls>
+<source src="files/Ubuntu.mkv" type="video/x-matroska">
+您的浏览器不支持影片播放。
+</video>
+<ol>
+<li>安装FlClash。（如何选择软件包已经附于最后处。）</li>
+<li>打开FlClash，选择下方栏内的“配置”，点击右下角的“+”</li>
+<li>选择“URL”，贴上订阅链接。</li>
+<li>点击下方栏内的“代理”，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，测试节点延迟，并选择自己所需的节点。如果节点显示Timeout即为无法联通，请勿选择。</li>
+<li>回到下方栏内“仪表盘”，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按钮，并根据需要选择出站模式（如何选择已经附于最后处）、并根据需要打开系统代理、虚拟网卡。</li>
+<li>访问Google（www.google.com），检查VPN是否正常运作。</li>
+</ol>
+
+<h3>系统代理、虚拟网卡应该如何选择？</h3>
+<p><strong>系统代理：</strong>将系统的Proxy设置服务器更改为127.0.0.1:7891，对系统兼容性较好，但对一些游戏下载的P2P协议等可能不理会系统代理设置的流量可能有bug，导致实际上并未走Clash出站。</p>
+<p><strong>虚拟网卡：</strong>在系统内创建一个虚拟的网卡，可以强制所有流量均必须通过Clash出站，但在部分系统上可能无法正常使用。</p>
+</div>
+
+<div class="section">
+<h2>iOS/iPadOS</h2>
+<p>由于本人没有运行iOS的装置，只能在此贴上GitHub bannedbook/fanqiang/ios/shadowrocket.md中适合本站的内容，并且针对本站特性稍作更改，在此郑重感谢原作者的辛苦奉献！</p>
+<h3>Shadowrocket小火箭配置使用教学课程</h3>
+<p><strong>应用概述</strong><br>Shadowrocket 是在 iOS 平台上的客户端软件，支持 Shadowsocks、ShadowsocksR 以及 VMess等协议。</p>
+<p>目前 Shadowrocket 已经被 Apple 根据政府要求从中国大陆区的 App Store 移除，先前在中国大陆商店购买此软件的用户将无法获得更新或重新下载。请确保从苹果商店下载最新版小火箭，如果您不是最新版，请升级到最新版。</p>
+<p><strong>如何获取Shadowrocket？</strong><br>请造访我们的公益VPN主站，那里有具体的获取说明。</p>
+<p>打开App Store，登录获取到的分享账号（如果在设置处登录且打开“寻找我的设备”功能，可能导致设备被此功能锁定，请切记仅在App Store登录。），随后搜索“Shadowrocket”，点击“安装”按钮。</p>
+<p><strong>配置 Shadowrocket</strong><br>打开Shadowrocket，在首页处点击右上角的加号，再次点击第一行的“类型”，选择 Subscribe。</p>
+<p>在“备注”中输入本站名称，随后在“URL”中贴上上方 取得订阅 中的订阅链接并保存。</p>
+<p>随后点选右上角保存，此时会自动更新取得服务器。</p>
+<p>Shadowrocket手工更新订阅方法： 点“服务器节点”最上方的订阅链接右边的“i”图标，然后再点右上角的“完成”。</p>
+<p>取得节点后，点选选取一个节点，然后点界面右上角的"未连接"开关，即可开启VPN连接自由上网。</p>
+</div>
+
+<div class="section">
+<h2>macOS</h2>
+<p>此处以FlClash做演示。</p>
+<ol>
+<li>安装FlClash。（如何选择软件包已经附于最后处。）</li>
+<li>打开FlClash，选择下方栏内的“配置”，点击右下角的“+”</li>
+<li>选择“URL”，贴上订阅链接。</li>
+<li>点击下方栏内的“代理”，按下右下角的 <img class="icon" src="files/Test.png" alt="Test">，测试节点延迟，并选择自己所需的节点。如果节点显示Timeout即为无法联通，请勿选择。</li>
+<li>回到下方栏内“仪表盘”，按下右下角 <img class="icon" src="files/Start.png" alt="Start"> 按钮，并根据需要选择出站模式（如何选择已经附于最后处）、并根据需要打开系统代理、虚拟网卡。</li>
+<li>访问Google（www.google.com），检查VPN是否正常运作。</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>各安装包架构、适用指南</h2>
+<h3>Android：</h3>
+<ul>
+<li>arm64（又称armv8或aarch64）：目前最主流的Android手机处理器指令集之一，2016年以后的Android手机绝大部分都用此指令集。</li>
+<li>Aremabi-v7a：大多在较早的Android手机上使用。</li>
+<li>X86（x86_64）部分特殊设备可用，如Android-x86等。</li>
+<li>Universal：通用安装包，如果有的话可以直接无脑选。</li>
+</ul>
+<h3>Windows：</h3>
+<ul>
+<li>X86（IA-32）：最古早的也是最广泛的PC指令集之一，如今新电脑基本只有装错系统才会用，并且Hiddify、FlClash，均没有x86版本，如果需要x86/Windows7/8版本，请使用Clash Party。</li>
+<li>X86_64：目前最广泛的指令集，如果是2010年后的新电脑，基本就可以选。</li>
+<li>IA-64：家用市场普及度过低，不做介绍。</li>
+<li>Arm64：大量用于轻量化的设备，如搭载Windows RT/Windows on ARM的Surface、Windows平板电脑等。</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>不同的出站模式有什么区别？</h2>
+<ul>
+<li><strong>规则：</strong>按照GeoIP、自定义规则等，自动匹配需要通过代理的网站、IP。</li>
+<li><strong>全局：</strong>无论如何，所有进入Clash的流量全部均会通过代理访问，如果需要改变访问国内网站时的IP等需求，请选择此模式。</li>
+<li><strong>直连：</strong>所有流量均不经过代理，体验约等于没有打开VPN。</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
